@@ -33,4 +33,4 @@ RUN python manage.py collectstatic --noinput
 EXPOSE 8058
 
 # Comando para iniciar la aplicación Gunicorn
-CMD ["gunicorn", "cc_micobac_project.wsgi:application", "--bind", "0.0.0.0:8058", "--workers", "3"]
+CMD ["gunicorn", "lraa_project.wsgi:application", "--bind", "0.0.0.0:8058", "--workers", "3"]
